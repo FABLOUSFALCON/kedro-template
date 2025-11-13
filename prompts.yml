@@ -1,19 +1,15 @@
 project_name:
   type: str
-  title: Project Name
+  title: "Project Name"
   default: "My Project"
-  help: Human-readable name for your project (e.g. 'Customer Churn Prediction')
 
 repo_name:
   type: str
-  title: Repository Name
-  default: "{{ project_name|lower|replace(' ', '-') }}"
-  help: Directory name for the new project (e.g. 'customer-churn-prediction')
-  regex_validator: "^[a-zA-Z][-a-zA-Z0-9_]+$"
+  title: "Repository Name"
+  default: "{{ cookiecutter.project_name | lower | replace(' ', '-') }}"
 
 python_package:
   type: str
-  title: Python Package Name
-  default: "{{ project_name|lower|replace(' ', '_') }}"
-  help: Package name (e.g. 'customer_churn')
-  regex_validator: "^[a-zA-Z][_a-zA-Z0-9]+$"
+  title: "Python Package Name"
+  default: "{{ cookiecutter.project_name | lower | replace(' ', '_') }}"
+  regex_validator: '^[_a-zA-Z][_a-zA-Z0-9]+$'

@@ -1,6 +1,5 @@
 {
   "project_name": "My Project",
   "repo_name": "my-project",
-  "python_package": "my_project",
-  "kedro_init_version": "1.0.0"
+  "python_package": "my_project"
 }
