@@ -1,5 +1,5 @@
 """{{ cookiecutter.project_name }} file for ensuring the package is executable
-as `{{ cookiecutter.package_name }}` and `python -m {{ cookiecutter.package_name }}`
+as `{{ cookiecutter.python_package }}` and `python -m {{ cookiecutter.python_package }}`
 """
 
 import sys

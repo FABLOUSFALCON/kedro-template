@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-# {{ cookiecutter.package_name }} documentation build
+# {{ cookiecutter.python_package }} documentation build
 # configuration file, created by sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its
@@ -19,11 +19,11 @@
 #
 import re
 
-from {{ cookiecutter.package_name }} import __version__ as release
+from {{ cookiecutter.python_package }} import __version__ as release
 
 # -- Project information -----------------------------------------------------
 
-project = "{{ cookiecutter.package_name }}"
+project = "{{ cookiecutter.python_package }}"
 author = "Kedro"
 
 # The short X.Y version.
@@ -117,7 +117,7 @@ html_show_sourcelink = False
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "{{ cookiecutter.package_name }}doc"
+htmlhelp_basename = "{{ cookiecutter.python_package }}doc"
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -145,8 +145,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "{{ cookiecutter.package_name }}.tex",
-        "{{ cookiecutter.package_name }} Documentation",
+        "{{ cookiecutter.python_package }}.tex",
+        "{{ cookiecutter.python_package }} Documentation",
         "Kedro",
         "manual",
     )
@@ -159,8 +159,8 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "{{ cookiecutter.package_name }}",
-        "{{ cookiecutter.package_name }} Documentation",
+        "{{ cookiecutter.python_package }}",
+        "{{ cookiecutter.python_package }} Documentation",
         [author],
         1,
     )
@@ -174,11 +174,11 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "{{ cookiecutter.package_name }}",
-        "{{ cookiecutter.package_name }} Documentation",
+        "{{ cookiecutter.python_package }}",
+        "{{ cookiecutter.python_package }} Documentation",
         author,
-        "{{ cookiecutter.package_name }}",
-        "Project {{ cookiecutter.package_name }} codebase.",
+        "{{ cookiecutter.python_package }}",
+        "Project {{ cookiecutter.python_package }} codebase.",
         "Data-Science",
     )
 ]

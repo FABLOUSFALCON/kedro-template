@@ -1,5 +1,6 @@
 {
-  "project_name": "your_project_name",
-  "package_name": "{{ cookiecutter.project_name|lower|replace(' ', '') }}",
+  "project_name": "My Project",
+  "repo_name": "my-project",
+  "python_package": "my_project",
   "kedro_init_version": "1.0.0"
 }

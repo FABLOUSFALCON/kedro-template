@@ -6,20 +6,20 @@
     {
       "label": "Install",
       "type": "shell",
-      "command": "/home/puneet/dev/Python/{{ cookiecutter.package_name }}/.venv/bin/kedro",
+      "command": "/home/puneet/dev/Python/{{ cookiecutter.python_package }}/.venv/bin/kedro",
       "args": ["install"]
     },
     {
       "label": "Test",
       "group": "test",
       "type": "shell",
-      "command": "/home/puneet/dev/Python/{{ cookiecutter.package_name }}/.venv/bin/kedro",
+      "command": "/home/puneet/dev/Python/{{ cookiecutter.python_package }}/.venv/bin/kedro",
       "args": ["test"]
     },
     {
       "label": "Run",
       "type": "shell",
-      "command": "/home/puneet/dev/Python/{{ cookiecutter.package_name }}/.venv/bin/kedro",
+      "command": "/home/puneet/dev/Python/{{ cookiecutter.python_package }}/.venv/bin/kedro",
       "args": ["run"]
     },
 
@@ -31,7 +31,7 @@
         "isDefault": true
       },
       "type": "shell",
-      "command": "/home/puneet/dev/Python/{{ cookiecutter.package_name }}/.venv/bin/kedro",
+      "command": "/home/puneet/dev/Python/{{ cookiecutter.python_package }}/.venv/bin/kedro",
       "args": ["package"],
       // Will run `Test` before packaging
       "dependsOn": ["Test"]

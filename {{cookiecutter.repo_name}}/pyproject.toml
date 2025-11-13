@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 requires-python = ">=3.9"
-name = "{{ cookiecutter.package_name }}"
+name = "{{ cookiecutter.python_package }}"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-"{{ cookiecutter.package_name }}" = "{{ cookiecutter.package_name }}.__main__:main"
+"{{ cookiecutter.python_package }}" = "{{ cookiecutter.python_package }}.__main__:main"
 
 [project.entry-points."kedro.hooks"]
 
@@ -40,14 +40,14 @@ dev = [
 ]
 
 [tool.setuptools.dynamic]
-version = {attr = "{{ cookiecutter.package_name }}.__version__"}
+version = {attr = "{{ cookiecutter.python_package }}.__version__"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
 namespaces = false
 
 [tool.kedro]
-package_name = "{{ cookiecutter.package_name }}"
+package_name = "{{ cookiecutter.python_package }}"
 project_name = "{{ cookiecutter.project_name }}"
 kedro_init_version = "1.0.0"
 tools = "['Linting', 'Testing', 'Custom Logging', 'Documentation', 'Data Structure']"
@@ -57,7 +57,7 @@ source_dir = "src"
 [tool.pytest.ini_options]
 addopts = """
 --cov-report term-missing \
---cov src/{{ cookiecutter.package_name }} -ra"""
+--cov src/{{ cookiecutter.python_package }} -ra"""
 
 [tool.coverage.report]
 fail_under = 0

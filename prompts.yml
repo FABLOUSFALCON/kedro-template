@@ -1,0 +1,13 @@
+project_name:
+  title: Project Name
+  text: "Human-readable name for your project (e.g. 'My Analytics Pipeline')"
+
+repo_name:
+  title: Repository Name
+  text: "Directory name (e.g. 'my-analytics-pipeline')"
+  regex_validator: "^[a-zA-Z0-9_-]+$"
+
+python_package:
+  title: Python Package Name
+  text: "Valid Python package name (e.g. 'my_pipeline')"
+  regex_validator: "^[a-zA-Z][_a-zA-Z0-9]+$"
