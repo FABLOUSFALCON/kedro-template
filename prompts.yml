@@ -1,13 +1,19 @@
 project_name:
+  type: str
   title: Project Name
-  text: "Human-readable name for your project (e.g. 'My Analytics Pipeline')"
+  default: "My Project"
+  help: Human-readable name for your project (e.g. 'Customer Churn Prediction')
 
 repo_name:
+  type: str
   title: Repository Name
-  text: "Directory name (e.g. 'my-analytics-pipeline')"
-  regex_validator: "^[a-zA-Z0-9_-]+$"
+  default: "{{ project_name|lower|replace(' ', '-') }}"
+  help: Directory name for the new project (e.g. 'customer-churn-prediction')
+  regex_validator: "^[a-zA-Z][-a-zA-Z0-9_]+$"
 
 python_package:
+  type: str
   title: Python Package Name
-  text: "Valid Python package name (e.g. 'my_pipeline')"
+  default: "{{ project_name|lower|replace(' ', '_') }}"
+  help: Package name (e.g. 'customer_churn')
   regex_validator: "^[a-zA-Z][_a-zA-Z0-9]+$"
